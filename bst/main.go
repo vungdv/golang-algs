@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
 
@@ -10,6 +13,8 @@ func main() {
 	// 			-> left(8)
 	// 		->left(5)
 	// 			right(6)
+	fmt.Println("Valid pre-order BST:", math.MinInt64)
+	fmt.Println("Valid pre-order BST:", math.MaxInt64)
 	test1 := []int{3, 9, 8, 5, 6}
 	test2 := []int{3, 9, 8, 5, 10} // false sub-left tree of 8 shouldn't greater than 8
 	test3 := []int{3, 9, 2, 5, 6}  // false, sub-right tree of 3 shouldn't less than 3
